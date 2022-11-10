@@ -12,7 +12,7 @@ function Main() {
   return (
     <main id="main">
       {samplePosts.map(
-        ({ postId, title, author, text, highlights, image, link, alt, date }) => {
+        ({ postId, title, author, text, highlights, image, date }) => {
           return (
             <Post
               title={title}
@@ -21,8 +21,8 @@ function Main() {
               text={text}
               highlights={highlights}
               image={image}
-              link={link}
-              alt={alt}
+              link={image.link}
+              alt={image.alt}
               key={postId}
             />
           );

@@ -27,6 +27,19 @@ const postTemplate = {
 
 const samplePosts = [
   {
+    postId: 0,
+    title: 'Pigeons taking over the trainstation',
+    date: 'Yesterday',
+    author: 'Shane and Elliot',
+    text: lorem.generateParagraphs(7),
+    highlights: [
+      lorem.generateWords(3),
+      lorem.generateWords(3),
+      lorem.generateWords(3),
+    ],
+    image: { link: 'https://i.ytimg.com/vi/oA-odUU5e0E/maxresdefault.jpg', alt: 'damn pigeons' },
+  },
+  {
     postId: 1,
     title: 'One Of My Favourites',
     date: '12/10/20',
